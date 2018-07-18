@@ -32,8 +32,7 @@ function main(){
          window.location.hash = target;
          $(document).on("scroll", onScroll);
       });
-   });  
-
+   });
 }
 
 function onScroll(event){
@@ -53,6 +52,7 @@ function onScroll(event){
 
 function initMap(){
    var mapDiv = document.getElementById('map');
+   debugger;
    var map = new google.maps.Map(mapDiv, {
       center: {lat: 27.4862419, lng: -109.9377804},
       zoom: 15

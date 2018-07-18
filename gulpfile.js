@@ -1,6 +1,6 @@
 var gulp  = require('gulp'),
     gutil = require('gulp-util'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     jshint = require('gulp-jshint'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
@@ -8,9 +8,9 @@ var gulp  = require('gulp'),
     cleanCSS  = require('gulp-clean-css');
 
 gulp.task('sass', function () {
-   return sass('source/sass/**/*.scss')
-      .on('error', sass.logError)
-      .pipe(cleanCSS()) 
+      return gulp.src('source/sass/**/*.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(cleanCSS())
       .pipe(gulp.dest('assets'));
 });
 
