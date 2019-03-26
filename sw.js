@@ -10,10 +10,6 @@ workbox.precaching.precacheAndRoute([
     "revision": "a998903763c2cc933dd7f826ee0a6422"
   },
   {
-    "url": "/_nuxt/85f319bdae4ef41f8236.js",
-    "revision": "64e5fd992a11ed3428292ccb4fb28571"
-  },
-  {
     "url": "/_nuxt/cb391c6963c4e36c3535.js",
     "revision": "1b1860642d2b0bf3ab01cb0671c4bfc3"
   },
@@ -28,9 +24,13 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "/_nuxt/e1306848a7d32bf39437.js",
     "revision": "c1cecb85b0748c1cdf8f6bc6f396a0ca"
+  },
+  {
+    "url": "/_nuxt/f050653dc65b3cf92443.js",
+    "revision": "3babe7242b6a7a54f927381d35cc953b"
   }
 ], {
-  "cacheId": "innart-webpage",
+  "cacheId": "innart",
   "directoryIndex": "/",
   "cleanUrls": false
 })
